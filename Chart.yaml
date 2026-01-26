@@ -1,0 +1,7 @@
+apiVersion: v2
+name: my-nginx-gitops
+version: 1.0.0
+dependencies:
+  - name: nginx
+    version: "15.x.x"
+    repository: "https://charts.bitnami.com/bitnami"
