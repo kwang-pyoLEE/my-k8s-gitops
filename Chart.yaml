@@ -3,5 +3,5 @@ name: my-nginx-gitops
 version: 1.0.0
 dependencies:
   - name: nginx
-    version: "15.x.x"
+    version: "15.16.1"
     repository: "https://charts.bitnami.com/bitnami"
