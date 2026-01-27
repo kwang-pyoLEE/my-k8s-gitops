@@ -2,4 +2,4 @@ nginx:
   replicaCount: 2
   service:
     type: LoadBalancer
-#  staticSiteConfigMap: "nginx-html"
+  staticSiteConfigMap: "nginx-html"
