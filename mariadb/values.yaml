@@ -1,0 +1,8 @@
+mariadb:
+  auth:
+    rootPassword: "password123"
+    database: "test_db"
+  primary:
+    persistence:
+      enabled: true
+      size: 8Gi
