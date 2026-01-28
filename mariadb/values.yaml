@@ -1,13 +1,15 @@
 mariadb:
   image:
     tag: "11.2.3-debian-11-r0"
-  # 1. 에러의 주범인 보조 단계를 완전히 비활성화합니다.
-  volumePermissions:
-    enabled: false
-  auth:
-    rootPassword: "password123"
-    database: "test_db"
   primary:
+    # 1. 범인(preserve-logs-symlinks)이 나타나지 않게 이 옵션을 끕니다.
+    preserveLogsSymlinks: false
+    # 2. 아까 껐던 권한 설정 보조 파드도 계속 꺼둡니다.
+    volumePermissions:
+      enabled: false
     persistence:
       enabled: true
       size: 8Gi
+  auth:
+    rootPassword: "password123"
+    database: "test_db"
