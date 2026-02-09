@@ -1,6 +1,7 @@
 mariadb:
   image:
-    tag: "11.2.3-debian-11-r0"
+    # tag: "11.2.3-debian-11-r0"
+    tag: "11.2-debian-11"
   primary:
     # 1. 범인(preserve-logs-symlinks)이 나타나지 않게 이 옵션을 끕니다.
     preserveLogsSymlinks: false
